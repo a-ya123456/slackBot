@@ -72,3 +72,5 @@ fabric.properties
 
 #ここに保存しないファイルのパスを書く
 app/slackbot_settings.py
+
+app/credentials.json

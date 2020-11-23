@@ -1,5 +1,0 @@
-API_TOKEN = "xoxb-1433876996608-1397020155607-kXP5ps9ryDwcgDKjI381Toys"
-
-DEFAULT_REPLY = "TEST"
-
-PLUGINS = ['plugins','module']

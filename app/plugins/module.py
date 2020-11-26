@@ -1,5 +1,7 @@
 from slackbot.bot import listen_to
 from slackbot.bot import respond_to
+from plugins import filewriter
+
 
 target_users = ['c0118010b9']
 target_channels = ['bot作成']
@@ -13,8 +15,10 @@ def comment_log(message,text):
         return
     if channel not in target_channels:
         return
+    f = filewriter.FileReadWrite()
+    action = f.file_write("./logs/test.txt", text)
+    message.react(action)
     message.send(text)
-    message.react('ok')
 
 
 @respond_to('^(.*)$')
